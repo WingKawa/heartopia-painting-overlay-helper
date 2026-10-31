@@ -8,10 +8,10 @@ Heartopia Painting Overlay Helper
 
 ## 下載 Windows 免安裝版
 
-**[下載 Windows 免安裝版 0.1.1](https://github.com/WingKawa/heartopia-painting-overlay-helper/releases/download/v0.1.1/HeartopiaPaintingOverlayHelper-0.1.1-windows-x64.zip)** · [版本說明與下載頁面](https://github.com/WingKawa/heartopia-painting-overlay-helper/releases/tag/v0.1.1)
+**[下載 Windows 免安裝版 0.1.2](https://github.com/WingKawa/heartopia-painting-overlay-helper/releases/download/v0.1.2/HeartopiaPaintingOverlayHelper-0.1.2-windows-x64.zip)** · [版本說明與下載頁面](https://github.com/WingKawa/heartopia-painting-overlay-helper/releases/tag/v0.1.2)
 
 - 適用 **Windows 10／11，64 位元（x64）**，不需另外安裝 Python。
-- 一般使用者請下載 `HeartopiaPaintingOverlayHelper-0.1.1-windows-x64.zip`。
+- 一般使用者請下載 `HeartopiaPaintingOverlayHelper-0.1.2-windows-x64.zip`。
 - **`Code → Download ZIP`、`Source code (zip)` 及 `Source code (tar.gz)` 都是原始碼，並非免安裝版。**
 
 **[線上圖文教學](https://wingkawa.github.io/heartopia-painting-overlay-helper/)**：依步驟完成圖片準備、校正、對齊與繪畫。免安裝版另附相同的離線教學，可從工具中的「使用教學」開啟。
