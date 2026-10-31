@@ -4,6 +4,8 @@ Heartopia Painting Overlay Helper
 
 在《心動小鎮》（Heartopia）的畫布上顯示參考圖片，協助玩家對照格子、逐色手動繪畫。
 
+**[線上圖文教學](https://wingkawa.github.io/heartopia-painting-overlay-helper/)**：依步驟完成圖片準備、校正、對齊與繪畫。免安裝版另附相同的離線教學，可從工具中的「使用教學」開啟。
+
 ![作品小地圖與繪畫工具介面](docs/guide/assets/draw.png)
 
 ## 下載 Windows 免安裝版
@@ -13,8 +15,6 @@ Heartopia Painting Overlay Helper
 - 適用 **Windows 10／11，64 位元（x64）**，不需另外安裝 Python。
 - 一般使用者請下載 `HeartopiaPaintingOverlayHelper-0.1.2-windows-x64.zip`。
 - **`Code → Download ZIP`、`Source code (zip)` 及 `Source code (tar.gz)` 都是原始碼，並非免安裝版。**
-
-**[線上圖文教學](https://wingkawa.github.io/heartopia-painting-overlay-helper/)**：依步驟完成圖片準備、校正、對齊與繪畫。免安裝版另附相同的離線教學，可從工具中的「使用教學」開啟。
 
 ## 快速開始
 
