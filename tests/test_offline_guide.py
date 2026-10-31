@@ -27,9 +27,9 @@ def test_guide_is_self_contained_and_all_images_exist():
                 assert 'src' not in attrs
     parser = Resources()
     parser.feed(guide.read_text(encoding='utf-8'))
-    assert parser.sections==[f'step-{index}' for index in range(1,6)]+['image-conversion','troubleshooting','rules-and-privacy']
+    assert parser.sections==['painting-walkthrough']+[f'step-{index}' for index in range(1,6)]+['image-conversion','troubleshooting','rules-and-privacy']
     assert all(link in parser.ids for link in parser.links)
-    assert len(set(parser.images))==8
+    assert len(set(parser.images))==13
     for source in parser.images:
         assert '://' not in source and not source.startswith('/')
         with Image.open(guide.parent/source) as image:

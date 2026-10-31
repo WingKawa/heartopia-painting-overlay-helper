@@ -14,15 +14,30 @@
 .nav-heading{font-size:13px;color:var(--muted);padding:18px 12px 4px;font-weight:600}
 nav a[aria-current=page]{background:var(--soft);border-color:var(--line);color:var(--accent);font-weight:600}
 .color-numbering{margin:18px 0;padding:18px;border:1px solid var(--line);border-radius:8px}.group-strip{display:grid;grid-template-columns:repeat(13,minmax(34px,1fr));gap:5px;overflow-x:auto;padding:5px}.group-badge{border-radius:5px;text-align:center;padding:8px 0;font-weight:700}.chosen{outline:3px solid var(--mark);outline-offset:2px}.palette-example{display:flex;flex-wrap:wrap;gap:25px;align-items:center;margin-top:24px}.slot-grid{display:grid;grid-template-columns:repeat(2,90px);gap:10px;padding:5px}.slot-swatch{padding:7px;text-align:center;border-radius:5px;font-size:20px;font-weight:700}.slot-swatch small{display:block;font-size:12px;font-weight:400}.palette-explanation{flex:1;min-width:180px}.screenshot-placeholder{min-height:200px;border:2px dashed var(--line);border-radius:8px;display:flex;flex-direction:column;align-items:center;justify-content:center;gap:8px;color:var(--muted);background:var(--bg);text-align:center;padding:20px}
+.walkthrough-pair{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:18px}.walkthrough-pair figure{margin:0}.walkthrough-pair .shot{margin-top:10px}.walkthrough-stage{margin-top:30px}.start-guide{display:inline-block;padding:9px 20px;border-radius:7px;background:var(--accent);color:var(--panel);text-decoration:none;font-weight:600}@media(max-width:650px){.walkthrough-pair{grid-template-columns:1fr}}
 </style>
 </head>
 <body>
 <header><div class="eyebrow">Heartopia 繪畫疊層小幫手</div><h1>跟著畫面，完成第一張作品</h1><p>先準備圖片、對齊遊戲格子，再依照疊層提示填色。疊層是顯示在遊戲畫布上的圖片提示。</p></header>
 <div class="layout">
 <nav aria-label="教學步驟">
-<a href="#step-1">01　載入圖片</a><a href="#step-2">02　設定畫布與構圖</a><a href="#step-3">03　連接與格子設定</a><a href="#step-4">04　對齊疊層</a><a href="#step-5">05　取色與繪畫</a><div class="nav-heading">補充說明</div><a href="#image-conversion">轉圖、微調與儲存</a><a href="#troubleshooting">問題處理與紀錄</a><a href="#rules-and-privacy">官方規章與資料使用</a>
+<a href="#painting-walkthrough">先看實際繪畫流程</a><div class="nav-heading">操作步驟</div><a href="#step-1">01　載入圖片</a><a href="#step-2">02　設定畫布與構圖</a><a href="#step-3">03　連接與格子設定</a><a href="#step-4">04　對齊疊層</a><a href="#step-5">05　取色與繪畫</a><div class="nav-heading">補充說明</div><a href="#image-conversion">轉圖、微調與儲存</a><a href="#troubleshooting">問題處理與紀錄</a><a href="#rules-and-privacy">官方規章與資料使用</a>
 </nav>
 <main>
+
+<section id="painting-walkthrough" data-supplement="true"><div class="step">使用前先看</div><h2>從對齊到填色，一步步畫出作品</h2>
+<p>載入圖片、設定畫布並校正格子大小後，就可以按照下面的方式開始繪畫。先看實際畫面，再從<a href="#step-1">步驟 1</a>完成設定；所有圖片都可點開放大。</p>
+<div class="walkthrough-stage"><h3>1. 利用畫布邊界對齊，例如左上角</h3>
+<p>先把遊戲畫布拖到看得見左上角的位置，再顯示疊層、按 <kbd>F9</kbd> 切到「對齊模式」。用左鍵拖曳疊層，讓疊層左上角的第一格與遊戲畫布左上角的第一格重合，同時確認附近格子也對齊。</p>
+<div class="walkthrough-pair"><figure><div class="shot"><a href="assets/painting-before-alignment.png" target="_blank" rel="noopener"><img src="assets/painting-before-alignment.png" alt="未對齊：疊層標有1,1的第一格位於遊戲畫布左上角的右下方" loading="lazy"></a></div><figcaption>對齊前：疊層第一格與遊戲畫布的左上角尚未重合。</figcaption></figure><figure><div class="shot"><a href="assets/painting-after-alignment.png" target="_blank" rel="noopener"><img src="assets/painting-after-alignment.png" alt="已對齊：疊層標有1,1的第一格與遊戲畫布左上角第一格重合" loading="lazy"></a></div><figcaption>對齊後：疊層第一格已移到遊戲畫布的左上角，附近格子也重合。</figcaption></figure></div><p class="muted">這兩張圖中的「1,1」等數字是格子的列、欄位置，與取色後顯示的遊戲色號不同。詳細操作見<a href="#step-4">步驟 4：對齊疊層</a>。</p></div>
+<div class="walkthrough-stage"><h3>2. 切到繪畫模式，移到想畫的區域</h3>
+<p>對齊後按 <kbd>F9</kbd> 切到「繪畫模式」，並勾選繪畫輔助中的右鍵拖曳同步功能。在遊戲畫布內按住右鍵拖曳，疊層便會跟著畫布移動，讓要畫的部分出現在眼前。</p><figure><div class="shot"><a href="assets/painting-after-pan.png" target="_blank" rel="noopener"><img src="assets/painting-after-pan.png" alt="切換繪畫模式並同步拖曳後，畫布顯示參考圖耳朵與額頭部分的多色疊層" loading="lazy"></a></div><figcaption>移動後：把要畫的區域移到方便操作的位置。畫面上的淡色格子是疊層提示。</figcaption></figure><p class="hint">拖曳後先確認是否仍對齊。若有些許偏差，保持「方向鍵微調疊層」勾選，點回遊戲後可用 <kbd>↑</kbd> <kbd>↓</kbd> <kbd>←</kbd> <kbd>→</kbd> 微調；<kbd>Shift</kbd>＋方向鍵可加快移動。偏差較大時，按 <kbd>F9</kbd> 回到對齊模式重新拖曳對齊。</p></div>
+<div class="walkthrough-stage"><h3>3. 取出一種顏色，只看這次要填的格子</h3>
+<p>按 <kbd>F5</kbd> 開啟取色模式，再點疊層上一個有色格子。疊層會只顯示同一種顏色，並以中心亮點與邊框提示位置；工具介面會顯示對應的遊戲色號。</p><figure><div class="shot"><a href="assets/painting-single-color.png" target="_blank" rel="noopener"><img src="assets/painting-single-color.png" alt="取色後只保留同一種淡橘色的格子，每格帶有中心亮點與邊框" loading="lazy"></a></div><figcaption>取色後：其他顏色暫時隱藏，更容易看出這次要填哪些格子。</figcaption></figure><p>在遊戲色盤選好對應顏色後，手動填入這些格子。色號讀法與選色操作見<a href="#step-5">步驟 5：取色與繪畫</a>。</p></div>
+<div class="walkthrough-stage"><h3>4. 一次完成一種顏色，再繼續下一種</h3>
+<p>這一區填好後，按 <kbd>F6</kbd> 顯示全部顏色，再按 <kbd>F5</kbd> 取下一種顏色，繼續填色。需要換區域時，右鍵拖曳畫布並確認對齊，重複「取色 → 選色 → 填色」，逐步完成整張圖。</p><figure><div class="shot"><a href="assets/painting-in-progress.png" target="_blank" rel="noopener"><img src="assets/painting-in-progress.png" alt="已手動畫出耳朵及額頭的部分顏色，下方仍有帶中心亮點的疊層格子提示" loading="lazy"></a></div><figcaption>已完成一部分：遊戲畫布上逐漸出現實際填入的顏色，帶亮點的疊層格子繼續提示目前選取的顏色。</figcaption></figure><p class="muted">疊層提示不會因為遊戲中已填色而自動消失；可按 <kbd>F8</kbd> 暫時隱藏疊層，查看實際完成的部分。</p></div>
+<p><a class="start-guide" href="#step-1">開始設定：載入圖片 →</a></p></section>
+
 <section id="step-1"><div class="step">步驟 1</div><h2>從右上方「載入圖片」開始</h2>
 <ol class="instructions"><li>開啟工具，按右上方 <strong>① 載入圖片</strong>，選擇要畫的圖片。</li><li>也可按 <strong>② 轉為小鎮125色…</strong> 開啟轉圖視窗，將圖片轉為小鎮支援的色彩。轉圖操作見<a href="#image-conversion">補充說明：轉圖、微調與儲存</a>。</li><li>載入完成後，左側小地圖會顯示作品；右側三個頁籤用來設定作品、疊層與繪畫工具。</li></ol>
 <figure><div class="shot"><a href="assets/prepare.png" target="_blank" rel="noopener"><img src="assets/prepare.png" alt="主視窗：右上方載入圖片及轉為小鎮125色，左側為作品小地圖，右側為工作頁籤" width="1598" height="1137"></a><span class="mark" style="--x:45.2%;--y:3.3%;--w:8.6%;--h:3.2%"><b>1</b></span><span class="mark" style="--x:62.8%;--y:3.3%;--w:10.1%;--h:3.2%"><b>2</b></span><span class="mark" style="--x:46.5%;--y:15.5%;--w:25.8%;--h:5.7%"><b>3</b></span></div><figcaption>點圖片可放大查看按鈕位置。</figcaption></figure>
@@ -39,11 +54,11 @@ nav a[aria-current=page]{background:var(--soft);border-color:var(--line);color:v
 <p class="hint">校正完成後，還需要在下一步拖曳疊層，對齊遊戲格子。</p></section>
 
 <section id="step-4"><div class="step">步驟 4</div><h2>在對齊模式，拖曳疊層重合格線</h2>
-<ol class="instructions"><li>顯示疊層，按上方 <strong>① 模式按鈕</strong> 或 <kbd>F9</kbd>，切到「對齊模式」。</li><li>在遊戲畫布上，按住左鍵拖曳疊層，讓色塊與遊戲格子重合。下圖示意格線與疊層的位置關係。</li><li>對齊後，再按模式按鈕或 <kbd>F9</kbd> 切到「繪畫模式」。此時滑鼠可直接操作遊戲。</li></ol>
+<ol class="instructions"><li>顯示疊層，按上方 <strong>① 模式按鈕</strong> 或 <kbd>F9</kbd>，切到「對齊模式」。</li><li>在遊戲畫布上，按住左鍵拖曳疊層，讓色塊與遊戲格子重合。建議利用畫布左上角等邊界作為對齊基準，先讓兩邊的第一格重合，再確認附近格子。可先看<a href="#painting-walkthrough">實際對齊與繪畫範例</a>；下圖示意格線與疊層的位置關係。</li><li>對齊後，再按模式按鈕或 <kbd>F9</kbd> 切到「繪畫模式」。此時滑鼠可直接操作遊戲。</li></ol>
 <svg class="diagram" viewBox="0 0 800 235" role="img" aria-label="左側為未對齊的疊層，向右移動後，色塊與遊戲格線重合"><defs><pattern id="grid" width="45" height="45" patternUnits="userSpaceOnUse"><rect width="45" height="45" fill="#fffdf4" stroke="#929b93" stroke-width="3"/></pattern><marker id="arrow" markerWidth="8" markerHeight="8" refX="7" refY="4" orient="auto"><path d="M0 0L8 4L0 8" fill="#216b4d"/></marker></defs><text x="145" y="32" font-size="18" fill="#24372e" text-anchor="middle">對齊前</text><rect x="45" y="55" width="225" height="135" fill="url(#grid)"/><g fill="#5ccba7" opacity=".8"><rect x="72" y="64" width="36" height="36"/><rect x="117" y="109" width="36" height="36"/><rect x="162" y="109" width="36" height="36"/></g><path d="M310 120H460" fill="none" stroke="#216b4d" stroke-width="4" marker-end="url(#arrow)"/><text x="388" y="95" text-anchor="middle" font-size="16" fill="#24372e">左鍵拖曳疊層</text><text x="615" y="32" font-size="18" fill="#24372e" text-anchor="middle">對齊後</text><rect x="495" y="55" width="225" height="135" fill="url(#grid)"/><g fill="#5ccba7" opacity=".8"><rect x="544" y="94" width="36" height="36"/><rect x="589" y="139" width="36" height="36"/><rect x="634" y="139" width="36" height="36"/></g><text x="400" y="220" text-anchor="middle" font-size="14" fill="#5c7165">位置示意；實際格子大小與留白依遊戲畫面調整。</text></svg>
 <figure><div class="shot"><a href="assets/align.png" target="_blank" rel="noopener"><img src="assets/align.png" alt="主視窗上方的顯示疊層與對齊模式切換按鈕"></a><span class="mark" style="--x:10.2%;--y:10.5%;--w:15.9%;--h:3.3%"><b>1</b></span></div></figure></section>
 
-<section id="step-5"><div class="step">步驟 5</div><h2>取出一種顏色，再到遊戲填色</h2>
+<section id="step-5"><div class="step">步驟 5</div><h2>取出一種顏色，再到遊戲填色</h2><p>想先看取色後與畫到一半的實際畫面，可閱讀<a href="#painting-walkthrough">實際繪畫流程</a>。</p>
 <ol class="instructions"><li>確認已切到「繪畫模式」。按 <kbd>F5</kbd> 或「繪畫工具」中的 <strong>① 從疊層取色</strong>，再點疊層上的有色格子。</li><li>取色後，疊層與小地圖只顯示同色格子，工具會顯示對應色號。按「顯示全部顏色」或 <kbd>F6</kbd> 恢復完整圖片。色號的數法見下方圖解。</li><li>在遊戲中展開右側色盤，可依色號自行選色。自動選色預設關閉；若要使用，請先閱讀<a href="#rules-and-privacy">官方規章與資料使用說明</a>，在工具勾選「啟用自動選色（會操作滑鼠）」，首次啟用時選擇「了解風險並啟用」。之後按 <strong>② 自動切換畫筆顏色</strong> 或 <kbd>F7</kbd>，再點回遊戲視窗。</li><li><strong>F7 會執行選色腳本，移動並點擊滑鼠。</strong>請保持遊戲在最前方，暫停操作滑鼠，等待選色完成，再繼續填色。執行中可按 <kbd>Esc</kbd> 取消。</li><li>若要移動畫布，在 <strong>③ 繪畫輔助</strong> 中勾選「右鍵拖畫布，同步移動疊層」，再從遊戲繪畫區按住右鍵拖曳。</li><li>拖曳後疊層與遊戲畫布可能偏移，請自行確認。勾選「方向鍵微調疊層」後，可用方向鍵快速修正，搭配 <kbd>Shift</kbd> 可加快移動；也可按 <kbd>F9</kbd> 切回對齊模式，用左鍵拖曳重新對齊。</li></ol>
 <figure><div class="shot"><a href="assets/draw.png" target="_blank" rel="noopener"><img src="assets/draw.png" alt="繪畫工具頁籤中的取色、顯示全部顏色、自動切換畫筆顏色與繪畫輔助"></a><span class="mark" style="--x:47.3%;--y:25.1%;--w:22.7%;--h:3.3%"><b>1</b></span><span class="mark" style="--x:47.3%;--y:35.8%;--w:50.8%;--h:3.2%"><b>2</b></span><span class="mark" style="--x:46.7%;--y:47.1%;--w:52.1%;--h:15.6%"><b>3</b></span></div><figcaption>需啟用自動選色並完成取色，才能使用自動切換畫筆顏色按鈕。</figcaption></figure>
 <details><summary>另一種取色方式：Shift＋左鍵</summary><p>在繪畫模式，按住 <kbd>Shift</kbd> 再用左鍵點疊層的有色格子，也可直接取色，不必先按 F5。</p></details>
@@ -102,20 +117,21 @@ function show(){
  const aliases={'#step-6':'#image-conversion','#step-7':'#troubleshooting'};
  const hash=aliases[location.hash]||location.hash;
  if(aliases[location.hash]) history.replaceState(null,'',hash);
- active=pages.find(page=>'#'+page.id===hash)||steps[0];
+ active=pages.find(page=>'#'+page.id===hash)||pages[0];
  current=steps.indexOf(active);
  pages.forEach(page=>page.hidden=page!==active);
  links.forEach(link=>{if(link.hash==='#'+active.id) link.setAttribute('aria-current',current<0?'page':'step');else link.removeAttribute('aria-current')});
+ previous.hidden=active.id==='painting-walkthrough';
  previous.disabled=current===0;
  previous.textContent=current<0?(active.id==='image-conversion'?'← 返回載入圖片':'← 返回取色與繪畫'):'← 上一步';
- next.hidden=current<0;
+ next.hidden=current<0&&active.id!=='painting-walkthrough';
  next.disabled=current===steps.length-1;
- next.textContent=current===steps.length-1?'主要步驟完成':'下一步 →';
- document.getElementById('progress').textContent=current<0?'補充說明':(current+1)+' / '+steps.length;
+ next.textContent=active.id==='painting-walkthrough'?'開始設定 →':current===steps.length-1?'主要步驟完成':'下一步 →';
+ document.getElementById('progress').textContent=current<0?(active.id==='painting-walkthrough'?'實際繪畫流程':'補充說明'):(current+1)+' / '+steps.length;
  window.scrollTo(0,0);
 }
 previous.addEventListener('click',()=>location.hash=current<0?(active.id==='image-conversion'?'step-1':'step-5'):steps[Math.max(0,current-1)].id);
-next.addEventListener('click',()=>{if(current>=0) location.hash=steps[Math.min(steps.length-1,current+1)].id});
+next.addEventListener('click',()=>{if(active.id==='painting-walkthrough'){location.hash='step-1';return;}if(current>=0) location.hash=steps[Math.min(steps.length-1,current+1)].id});
 window.addEventListener('hashchange',show);show();
 })();
 </script>
