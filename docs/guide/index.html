@@ -1,0 +1,122 @@
+<!doctype html>
+<html lang="zh-Hant">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<title>Heartopia 繪畫疊層小幫手｜圖文使用教學</title>
+<style>
+:root{color-scheme:light dark;--bg:#f4f7f5;--panel:white;--ink:#24372e;--muted:#5c7165;--line:#d8e4dc;--accent:#216b4d;--soft:#e8f3ec;--mark:#ce4937}
+*{box-sizing:border-box}body{margin:0;background:var(--bg);color:var(--ink);font:16px/1.75 "Segoe UI","Microsoft JhengHei",sans-serif}a{color:var(--accent);text-underline-offset:3px}button{font:inherit;cursor:pointer}header{max-width:1280px;margin:auto;padding:40px 30px 24px}.eyebrow{color:var(--accent);letter-spacing:.12em;font-size:13px;font-weight:600}h1{font-size:30px;margin:8px 0}header p{margin:8px 0;color:var(--muted)}.layout{display:grid;grid-template-columns:210px minmax(0,1fr);gap:28px;max-width:1280px;margin:0 auto 50px;padding:0 30px}nav{position:sticky;top:24px;align-self:start}nav a{display:block;padding:10px 12px;margin:5px 0;border-radius:8px;text-decoration:none;color:var(--muted);border:1px solid transparent}nav a[aria-current=step]{background:var(--soft);border-color:var(--line);color:var(--accent);font-weight:600}main{min-width:0;background:var(--panel);border:1px solid var(--line);border-radius:14px;padding:28px}section[hidden]{display:none}.step{color:var(--accent);font-size:14px}h2{font-size:25px;margin:4px 0 14px}h3{font-size:18px;margin:26px 0 8px}.instructions{padding-left:25px;margin:12px 0 20px}.instructions li{padding-left:4px;margin:9px 0}.hint{border-left:3px solid var(--accent);padding:10px 15px;background:var(--soft);border-radius:0 7px 7px 0;color:var(--ink)}.muted,figcaption{color:var(--muted);font-size:14px}.shot{position:relative;margin:22px 0 8px;border:1px solid var(--line);border-radius:8px;background:white}.shot img{width:100%;height:auto;display:block;border-radius:8px}.mark{position:absolute;left:var(--x);top:var(--y);width:var(--w);height:var(--h);border:2px solid var(--mark);border-radius:4px;pointer-events:none;box-shadow:0 0 0 1px white}.mark b{position:absolute;left:-13px;top:-16px;width:25px;height:25px;line-height:25px;text-align:center;border-radius:50%;color:white;background:var(--mark);font:600 14px/25px "Segoe UI",sans-serif;box-shadow:0 0 0 2px white}figcaption{margin-top:8px}.points{display:flex;flex-wrap:wrap;gap:7px 20px;margin:12px 0}.points span{font-size:14px}.points b{color:var(--mark)}kbd{display:inline-block;background:var(--soft);border:1px solid var(--line);border-bottom-width:2px;border-radius:4px;padding:0 6px;font:inherit;font-size:.9em}.diagram{width:100%;height:auto;background:var(--bg);border:1px solid var(--line);border-radius:8px;margin:16px 0}details{border:1px solid var(--line);padding:10px 14px;border-radius:8px;margin-top:20px}summary{cursor:pointer;color:var(--accent)}.pagination{display:flex;align-items:center;justify-content:space-between;gap:15px;border-top:1px solid var(--line);padding-top:20px;margin-top:28px}.pagination button{padding:9px 20px;border:1px solid var(--line);border-radius:7px;background:var(--panel);color:var(--ink)}.pagination button.next{background:var(--accent);color:white;border-color:var(--accent)}.pagination button:disabled{opacity:.4;cursor:default}button:focus-visible,a:focus-visible,summary:focus-visible{outline:3px solid var(--accent);outline-offset:3px}.progress{font-size:14px;color:var(--muted)}footer{max-width:1280px;margin:auto;padding:0 30px 32px;color:var(--muted);font-size:13px}
+@media(prefers-color-scheme:dark){:root{--bg:#17221d;--panel:#223029;--ink:#edf5ef;--muted:#b8cabe;--line:#42584a;--accent:#a1d8b6;--soft:#2e4335}.pagination button.next{color:#173124}.mark{--mark:#ec5748}.diagram text{fill:var(--ink)}}
+@media(max-width:800px){header{padding:25px 18px 14px}.layout{grid-template-columns:1fr;padding:0 16px;gap:16px}nav{position:static;display:flex;flex-wrap:wrap;gap:4px}nav a{font-size:14px;padding:5px 9px;margin:0}main{padding:20px 16px}h1{font-size:25px}h2{font-size:23px}.mark b{width:20px;height:20px;font-size:12px;line-height:20px;left:-10px;top:-13px}.pagination button{padding:8px 12px}.points{display:block}.points span{display:block}.progress{font-size:12px}}
+@media print{nav,.pagination{display:none}.layout{display:block;max-width:none}main{border:0}section[hidden]{display:block}section{break-before:page}.shot{break-inside:avoid}header{padding:10px}footer{display:none}}
+
+.nav-heading{font-size:13px;color:var(--muted);padding:18px 12px 4px;font-weight:600}
+nav a[aria-current=page]{background:var(--soft);border-color:var(--line);color:var(--accent);font-weight:600}
+.color-numbering{margin:18px 0;padding:18px;border:1px solid var(--line);border-radius:8px}.group-strip{display:grid;grid-template-columns:repeat(13,minmax(34px,1fr));gap:5px;overflow-x:auto;padding:5px}.group-badge{border-radius:5px;text-align:center;padding:8px 0;font-weight:700}.chosen{outline:3px solid var(--mark);outline-offset:2px}.palette-example{display:flex;flex-wrap:wrap;gap:25px;align-items:center;margin-top:24px}.slot-grid{display:grid;grid-template-columns:repeat(2,90px);gap:10px;padding:5px}.slot-swatch{padding:7px;text-align:center;border-radius:5px;font-size:20px;font-weight:700}.slot-swatch small{display:block;font-size:12px;font-weight:400}.palette-explanation{flex:1;min-width:180px}.screenshot-placeholder{min-height:200px;border:2px dashed var(--line);border-radius:8px;display:flex;flex-direction:column;align-items:center;justify-content:center;gap:8px;color:var(--muted);background:var(--bg);text-align:center;padding:20px}
+</style>
+</head>
+<body>
+<header><div class="eyebrow">Heartopia 繪畫疊層小幫手</div><h1>跟著畫面，完成第一張作品</h1><p>先準備圖片、對齊遊戲格子，再依照疊層提示填色。疊層是顯示在遊戲畫布上的圖片提示。</p></header>
+<div class="layout">
+<nav aria-label="教學步驟">
+<a href="#step-1">01　載入圖片</a><a href="#step-2">02　設定畫布與構圖</a><a href="#step-3">03　連接與格子設定</a><a href="#step-4">04　對齊疊層</a><a href="#step-5">05　取色與繪畫</a><div class="nav-heading">補充說明</div><a href="#image-conversion">轉圖、微調與儲存</a><a href="#troubleshooting">問題處理與紀錄</a><a href="#rules-and-privacy">官方規章與資料使用</a>
+</nav>
+<main>
+<section id="step-1"><div class="step">步驟 1</div><h2>從右上方「載入圖片」開始</h2>
+<ol class="instructions"><li>開啟工具，按右上方 <strong>① 載入圖片</strong>，選擇要畫的圖片。</li><li>也可按 <strong>② 轉為小鎮125色…</strong> 開啟轉圖視窗，將圖片轉為小鎮支援的色彩。轉圖操作見<a href="#image-conversion">補充說明：轉圖、微調與儲存</a>。</li><li>載入完成後，左側小地圖會顯示作品；右側三個頁籤用來設定作品、疊層與繪畫工具。</li></ol>
+<figure><div class="shot"><a href="assets/prepare.png" target="_blank" rel="noopener"><img src="assets/prepare.png" alt="主視窗：右上方載入圖片及轉為小鎮125色，左側為作品小地圖，右側為工作頁籤" width="1598" height="1137"></a><span class="mark" style="--x:45.2%;--y:3.3%;--w:8.6%;--h:3.2%"><b>1</b></span><span class="mark" style="--x:62.8%;--y:3.3%;--w:10.1%;--h:3.2%"><b>2</b></span><span class="mark" style="--x:46.5%;--y:15.5%;--w:25.8%;--h:5.7%"><b>3</b></span></div><figcaption>點圖片可放大查看按鈕位置。</figcaption></figure>
+<p class="hint">圖片中的一個像素，對應疊層的一格。</p></section>
+
+<section id="step-2"><div class="step">步驟 2</div><h2>先設定作品，再決定觀看哪一區</h2>
+<ol class="instructions"><li>選擇右側 <strong>① 作品設定</strong>，選擇常用尺寸，或輸入畫布寬、高，再按「套用畫布大小」。單位為格。</li><li><strong>決定圖片要放在哪裡：</strong>選擇左側 <strong>② 調整圖片位置</strong>，再在小地圖上拖曳圖片。例如將圖片放在畫布中央，或移到右下角；這會改變作品的構圖。也可按「圖片置中」或「重設圖片位置」。</li><li><strong>決定現在要畫哪一區：</strong>選擇 <strong>③ 移動觀看範圍</strong>，拖曳小地圖上的青色框，選擇疊層要顯示的部分。例如先畫左上角，再把青色框移到右下角。這不會改變圖片在作品中的位置。</li></ol>
+<figure><div class="shot"><a href="assets/prepare.png" target="_blank" rel="noopener"><img src="assets/prepare.png" alt="作品設定中的畫布寬高與圖片構圖，以及小地圖上方的兩種操作模式"></a><span class="mark" style="--x:46.7%;--y:15.6%;--w:52.1%;--h:19.8%"><b>1</b></span><span class="mark" style="--x:9.3%;--y:18.8%;--w:8%;--h:2.7%"><b>2</b></span><span class="mark" style="--x:0.8%;--y:18.8%;--w:8.2%;--h:2.7%"><b>3</b></span></div><figcaption>超出作品畫布的圖片部分不會顯示在疊層上。移動青色框只會切換疊層的觀看範圍，遊戲畫布需自行拖到對應位置。</figcaption></figure><details><summary>直接移到指定格子</summary><p>在小地圖下方輸入列、欄，再按「移至此格」，即可將青色觀看框的左上角移到該格。</p></details></section>
+
+<section id="step-3"><div class="step">步驟 3</div><h2>連接遊戲，讓疊層格子大小一致</h2>
+<ol class="instructions"><li>開啟遊戲的繪畫介面。在工具按上方 <strong>① 連接遊戲視窗</strong>，再用滑鼠點一下遊戲視窗，完成連接。<kbd>Esc</kbd> 可取消等待。</li><li>在遊戲中打開畫布，調整放大倍率，直到格線清楚可見。工具需要先取得遊戲視窗的尺寸，再量測畫面中的格子大小，才能讓疊層與遊戲格子相配。<figure id="game-grid-example"><div class="shot"><a href="assets/game-grid-visible-annotated.png" target="_blank" rel="noopener"><img src="assets/game-grid-visible-annotated.png" width="1672" height="941" alt="遊戲畫布操作示例：①開啟格線，②向右拖曳滑桿放大畫布，③確認格線清晰，工具才能量測格子大小"></a></div><figcaption>①開啟格線，②向右拖曳滑桿放大。畫布內的格線清楚可見後，再截圖校正；沒有清楚格線時，工具無法量測格子大小。</figcaption></figure></li><li>先隱藏疊層，點回遊戲視窗，按 <kbd>Alt</kbd>＋<kbd>PrintScreen</kbd> 複製完整遊戲截圖，不要裁切。</li><li>回到工具，開啟 <strong>② 疊層設定</strong>，按 <strong>③ 貼上截圖並校正格子寬高與格距…</strong>，再按「貼上截圖」或 <kbd>Ctrl</kbd>＋<kbd>V</kbd>。</li><li>在預覽上框選畫布內部，每個方向至少包含四條完整格線。按「量測格線」，確認結果後按「套用量測結果」。</li></ol>
+<figure><div class="shot"><a href="assets/align.png" target="_blank" rel="noopener"><img src="assets/align.png" alt="上方的連接遊戲視窗按鈕、疊層設定頁籤、格子寬高滑桿與貼上截圖校正按鈕"></a><span class="mark" style="--x:81.9%;--y:3.3%;--w:8.6%;--h:3.2%"><b>1</b></span><span class="mark" style="--x:54.9%;--y:15.6%;--w:9.2%;--h:5.5%"><b>2</b></span><span class="mark" style="--x:47.3%;--y:39.1%;--w:18.7%;--h:3.2%"><b>3</b></span></div></figure>
+<details><summary>也可以手動調整格子大小與間距</summary><p>在「疊層設定」以滑桿調整格子寬高，或輸入格子寬高與格距，再按「套用尺寸」。格距是格子之間的留白。</p></details>
+<p class="hint">校正完成後，還需要在下一步拖曳疊層，對齊遊戲格子。</p></section>
+
+<section id="step-4"><div class="step">步驟 4</div><h2>在對齊模式，拖曳疊層重合格線</h2>
+<ol class="instructions"><li>顯示疊層，按上方 <strong>① 模式按鈕</strong> 或 <kbd>F9</kbd>，切到「對齊模式」。</li><li>在遊戲畫布上，按住左鍵拖曳疊層，讓色塊與遊戲格子重合。下圖示意格線與疊層的位置關係。</li><li>對齊後，再按模式按鈕或 <kbd>F9</kbd> 切到「繪畫模式」。此時滑鼠可直接操作遊戲。</li></ol>
+<svg class="diagram" viewBox="0 0 800 235" role="img" aria-label="左側為未對齊的疊層，向右移動後，色塊與遊戲格線重合"><defs><pattern id="grid" width="45" height="45" patternUnits="userSpaceOnUse"><rect width="45" height="45" fill="#fffdf4" stroke="#929b93" stroke-width="3"/></pattern><marker id="arrow" markerWidth="8" markerHeight="8" refX="7" refY="4" orient="auto"><path d="M0 0L8 4L0 8" fill="#216b4d"/></marker></defs><text x="145" y="32" font-size="18" fill="#24372e" text-anchor="middle">對齊前</text><rect x="45" y="55" width="225" height="135" fill="url(#grid)"/><g fill="#5ccba7" opacity=".8"><rect x="72" y="64" width="36" height="36"/><rect x="117" y="109" width="36" height="36"/><rect x="162" y="109" width="36" height="36"/></g><path d="M310 120H460" fill="none" stroke="#216b4d" stroke-width="4" marker-end="url(#arrow)"/><text x="388" y="95" text-anchor="middle" font-size="16" fill="#24372e">左鍵拖曳疊層</text><text x="615" y="32" font-size="18" fill="#24372e" text-anchor="middle">對齊後</text><rect x="495" y="55" width="225" height="135" fill="url(#grid)"/><g fill="#5ccba7" opacity=".8"><rect x="544" y="94" width="36" height="36"/><rect x="589" y="139" width="36" height="36"/><rect x="634" y="139" width="36" height="36"/></g><text x="400" y="220" text-anchor="middle" font-size="14" fill="#5c7165">位置示意；實際格子大小與留白依遊戲畫面調整。</text></svg>
+<figure><div class="shot"><a href="assets/align.png" target="_blank" rel="noopener"><img src="assets/align.png" alt="主視窗上方的顯示疊層與對齊模式切換按鈕"></a><span class="mark" style="--x:10.2%;--y:10.5%;--w:15.9%;--h:3.3%"><b>1</b></span></div></figure></section>
+
+<section id="step-5"><div class="step">步驟 5</div><h2>取出一種顏色，再到遊戲填色</h2>
+<ol class="instructions"><li>確認已切到「繪畫模式」。按 <kbd>F5</kbd> 或「繪畫工具」中的 <strong>① 從疊層取色</strong>，再點疊層上的有色格子。</li><li>取色後，疊層與小地圖只顯示同色格子，工具會顯示對應色號。按「顯示全部顏色」或 <kbd>F6</kbd> 恢復完整圖片。色號的數法見下方圖解。</li><li>在遊戲中展開右側色盤，可依色號自行選色。自動選色預設關閉；若要使用，請先閱讀<a href="#rules-and-privacy">官方規章與資料使用說明</a>，在工具勾選「啟用自動選色（會操作滑鼠）」，首次啟用時選擇「了解風險並啟用」。之後按 <strong>② 自動切換畫筆顏色</strong> 或 <kbd>F7</kbd>，再點回遊戲視窗。</li><li><strong>F7 會執行選色腳本，移動並點擊滑鼠。</strong>請保持遊戲在最前方，暫停操作滑鼠，等待選色完成，再繼續填色。執行中可按 <kbd>Esc</kbd> 取消。</li><li>若要移動畫布，在 <strong>③ 繪畫輔助</strong> 中勾選「右鍵拖畫布，同步移動疊層」，再從遊戲繪畫區按住右鍵拖曳。</li><li>拖曳後疊層與遊戲畫布可能偏移，請自行確認。勾選「方向鍵微調疊層」後，可用方向鍵快速修正，搭配 <kbd>Shift</kbd> 可加快移動；也可按 <kbd>F9</kbd> 切回對齊模式，用左鍵拖曳重新對齊。</li></ol>
+<figure><div class="shot"><a href="assets/draw.png" target="_blank" rel="noopener"><img src="assets/draw.png" alt="繪畫工具頁籤中的取色、顯示全部顏色、自動切換畫筆顏色與繪畫輔助"></a><span class="mark" style="--x:47.3%;--y:25.1%;--w:22.7%;--h:3.3%"><b>1</b></span><span class="mark" style="--x:47.3%;--y:35.8%;--w:50.8%;--h:3.2%"><b>2</b></span><span class="mark" style="--x:46.7%;--y:47.1%;--w:52.1%;--h:15.6%"><b>3</b></span></div><figcaption>需啟用自動選色並完成取色，才能使用自動切換畫筆顏色按鈕。</figcaption></figure>
+<details><summary>另一種取色方式：Shift＋左鍵</summary><p>在繪畫模式，按住 <kbd>Shift</kbd> 再用左鍵點疊層的有色格子，也可直接取色，不必先按 F5。</p></details>
+<h3>色號怎麼數？以 7-3 為例</h3>
+<figure class="color-numbering"><p><strong>先找第7組主色</strong>，再數下方第3個色塊。</p><div class="group-strip" aria-label="主色組順序，由左至右為第1至第13組，框選第7組"><div class="group-badge" style="background:#051616;color:#ffffff">1</div><div class="group-badge" style="background:#CF354D;color:#ffffff">2</div><div class="group-badge" style="background:#E95E2B;color:#ffffff">3</div><div class="group-badge" style="background:#F49E16;color:#111111">4</div><div class="group-badge" style="background:#EDCA16;color:#111111">5</div><div class="group-badge" style="background:#A8BC16;color:#ffffff">6</div><div class="group-badge chosen" style="background:#05A25D;color:#ffffff">7</div><div class="group-badge" style="background:#058781;color:#ffffff">8</div><div class="group-badge" style="background:#05729C;color:#ffffff">9</div><div class="group-badge" style="background:#055EA6;color:#ffffff">10</div><div class="group-badge" style="background:#534DA1;color:#ffffff">11</div><div class="group-badge" style="background:#813D8B;color:#ffffff">12</div><div class="group-badge" style="background:#AD356F;color:#ffffff">13</div></div><div class="palette-example"><div class="slot-grid" aria-label="第7組色塊，由左至右、由上至下排列；第二列左側為7-3"><div class="slot-swatch" style="background:#05A25D;color:#ffffff">1<small>7-1</small></div><div class="slot-swatch" style="background:#41B97B;color:#ffffff">2<small>7-2</small></div><div class="slot-swatch chosen" style="background:#057447;color:#ffffff">3<small>7-3</small></div><div class="slot-swatch" style="background:#9CDAAD;color:#111111">4<small>7-4</small></div><div class="slot-swatch" style="background:#76B28B;color:#111111">5<small>7-5</small></div><div class="slot-swatch" style="background:#4F8969;color:#ffffff">6<small>7-6</small></div><div class="slot-swatch" style="background:#245640;color:#ffffff">7<small>7-7</small></div><div class="slot-swatch" style="background:#C3E0CC;color:#111111">8<small>7-8</small></div><div class="slot-swatch" style="background:#9DB7A6;color:#111111">9<small>7-9</small></div><div class="slot-swatch" style="background:#53695D;color:#ffffff">10<small>7-10</small></div></div><div class="palette-explanation"><p><strong>7</strong>：第7組主色。</p><p><strong>3</strong>：該組第3個顏色，也就是第二列左側。</p><p>第一列數 1、2；第二列數 3、4；接著 5、6，依此類推。</p></div></div><figcaption>色號位置示意。上排將全部主色組攤開；遊戲的彩色長條可點擊或拖曳切換。第1組只有5色，其餘各組有10色。</figcaption></figure>
+<h3>先展開遊戲色盤，再使用 F7</h3>
+<p>點擊遊戲右側的調色盤按鈕，展開選色條，讓上方彩色長條及下方各個色塊都出現，再執行自動選色。</p>
+<figure id="expanded-palette-example"><div class="shot" style="max-width:480px;margin-inline:auto"><a href="assets/expanded-palette-annotated.png" target="_blank" rel="noopener"><img src="assets/expanded-palette-annotated.png" width="1077" height="1461" alt="實際遊戲色盤：點擊左下方①調色盤按鈕，可展開右上方②選色條，紅色箭頭標示兩者關係"></a></div><figcaption>點擊左下方的①調色盤按鈕，即可展開右上方的②選色條。點圖片可放大查看。</figcaption></figure>
+<h3 id="palette-calibration">校正 F7 自動選色的位置</h3>
+<p>F7 沒有反應或選錯顏色時，可重新校正色盤位置。</p>
+<ol class="instructions"><li>先在遊戲中展開色盤，確保上方選色條與下方所有色塊都清楚可見，沒有被其他視窗遮住。</li><li>點回遊戲視窗，按 <kbd>Alt</kbd>＋<kbd>PrintScreen</kbd>，複製<strong>完整遊戲截圖</strong>，不要只裁切色盤。</li><li>回到工具，在「繪畫工具」展開「色盤位置與校正」，按「貼上截圖並校正色盤位置…」，再貼上截圖。</li><li>在貼上的預覽中，框選色盤上方的選色條與下方全部色塊，按「辨識色盤」。</li><li>確認編號點對準各個色塊，按「保存色盤校正」，再使用 F7 選色。</li></ol>
+<figure id="palette-calibration-screenshot"><div class="shot"><a href="assets/game-palette-calibration-annotated.png" target="_blank" rel="noopener"><img src="assets/game-palette-calibration-annotated.png" width="1672" height="941" alt="色盤校正截圖範例：①貼上完整遊戲截圖，不要裁切；②右側色盤完整展開，選色條與所有色塊清楚可見"></a></div><figcaption>校正時需貼上完整遊戲截圖。右側色盤必須完整展開、清楚可見，工具才能判斷色盤位置。貼上後，再於預覽中框選色盤範圍。</figcaption></figure>
+
+</section>
+
+<section id="image-conversion" data-supplement="true"><div class="step">補充說明 · 載入圖片</div><h2>微調轉色結果，另存成 PNG</h2><p>需要轉圖時，從步驟1開啟此處操作；完成後可<a href="#step-1">返回載入圖片</a>，繼續設定作品。</p>
+<ol class="instructions"><li>在轉圖視窗上方 <strong>① 選擇常用尺寸，或輸入像素寬、高</strong>，再選擇縮放方式。若要保留原圖的一部分，可勾選「手動裁切」，在原圖上調整裁切框。</li><li>使用 <strong>② 色彩微調</strong> 的滑桿調整，右側會自動更新預覽。白位往右讓亮部更白；黑位往右讓暗部更黑。按「恢復色彩預設」可取消這些色彩調整。</li><li>預覽完成後，按下方 <strong>③ 另存圖片…</strong> 儲存 PNG；或按 <strong>④ 使用轉換結果</strong> 載入主視窗。</li></ol>
+<figure><div class="shot" style="max-width:780px;margin-inline:auto"><a href="assets/convert.png" target="_blank" rel="noopener"><img src="assets/convert.png" alt="轉圖視窗的輸出尺寸、色彩微調滑桿及另存圖片與使用轉換結果按鈕"></a><span class="mark" style="--x:1.2%;--y:3.6%;--w:42.2%;--h:3.3%"><b>1</b></span><span class="mark" style="--x:1%;--y:55.5%;--w:96.7%;--h:31.1%"><b>2</b></span><span class="mark" style="--x:70.3%;--y:89.8%;--w:13.5%;--h:3.4%"><b>3</b></span><span class="mark" style="--x:84.2%;--y:89.8%;--w:13.6%;--h:3.4%"><b>4</b></span></div></figure>
+<h3>也可從主視窗另存完整作品</h3><p>主視窗右上方的「另存圖片…」會儲存目前作品畫布中的<strong>全部顏色</strong>，保留調整後的圖片位置。即使正在只顯示某一色，或只觀看圖片的一部分，仍會儲存整張作品。</p></section>
+
+<section id="troubleshooting" data-supplement="true"><div class="step">補充說明 · 問題處理</div><h2>出現問題時，匯出診斷紀錄</h2><p>這一頁供遇到問題時查閱，不是完成繪畫的必做步驟。</p>
+<ol class="instructions"><li>遇到問題後，先記下剛才的操作與大約發生時間。</li><li>按主視窗右上方「功能檢查」。</li><li>按下方 <strong>① 匯出診斷紀錄…</strong>，儲存 ZIP，將這份檔案連同問題描述交給開發者。</li></ol>
+<figure><div class="shot" style="max-width:780px"><a href="assets/diagnostics.png" target="_blank" rel="noopener"><img src="assets/diagnostics.png" alt="功能檢查視窗，左下方的匯出診斷紀錄按鈕"></a><span class="mark" style="--x:17.1%;--y:92.7%;--w:16.6%;--h:5.6%"><b>1</b></span></div><figcaption>按「匯出診斷紀錄…」即可儲存要提供給開發者的檔案。</figcaption></figure>
+<p class="hint">紀錄不會自動傳送，需自行匯出後提供；匯出的檔案不包含作品或截圖。</p>
+<details><summary>快捷鍵、連線與視窗的常見情況</summary><ul class="instructions"><li>若快捷鍵、同步拖曳或自動選色沒有反應，可在「功能檢查」查看遊戲是否以系統管理員身分執行。若是，請關閉工具，再對工具的執行檔按右鍵，選「以系統管理員身分執行」。</li><li>部分鍵盤需要搭配 Fn 才能使用 F5～F9。也可直接按工具上的對應按鈕。</li><li>找不到遊戲時，按「連接遊戲視窗」，再切回遊戲。</li><li>主視窗可被其他視窗蓋住；只有疊層保持置頂。</li></ul></details></section>
+
+<section id="rules-and-privacy" data-supplement="true"><div class="step">補充說明 · 使用前須知</div><h2>官方規章與資料使用</h2>
+<h3>工具用途與運作方式</h3>
+<p>本工具提供圖片轉色、疊層參考、取色與位置調整，供玩家手動繪畫使用。同步移動功能會依玩家的滑鼠操作調整疊層位置，不會代替玩家拖曳遊戲畫布。</p>
+<p>「自動選色」是可選的自動化功能，預設關閉。啟用後，每次由玩家按下按鈕或 <kbd>F7</kbd>，工具會等待玩家切回遊戲，再執行滑鼠移動與點擊，切換畫筆顏色。執行期間請暫停操作滑鼠，等待完成；可按 <kbd>Esc</kbd> 取消。不啟用也可使用疊層與取色功能，並自行在遊戲內選色。</p>
+<p>在「繪畫工具」勾選「啟用自動選色（會操作滑鼠）」，首次啟用會顯示操作與風險說明。確認後才會啟用；之後會記住你的選擇。取消勾選會停止等待或執行中的選色，F7 也不會再啟動腳本。</p>
+<h3>官方規章與使用風險</h3>
+<p class="hint">本工具為非官方第三方工具，未取得遊戲營運方的使用許可或背書。本工具無法保證使用後不會收到警告、功能限制或帳號停權等處置。請自行評估是否使用，並承擔相關風險。</p>
+<p>是否允許使用本工具及其各項功能，應以玩家所使用版本適用的最新官方協議、公告及營運方判定為準。</p>
+<p>關閉自動選色，只會停用該項滑鼠自動操作，不代表其他輔助功能已獲官方允許。用途為繪畫輔助、不讀取遊戲記憶體，或由玩家在場操作，也不等於符合官方規章。</p>
+<h3>官方協議第 8.2～8.5 條</h3>
+<p>以下是 XD 公開的 <a href="https://protocol.xd.com/heartpoia/agreement.html" target="_blank" rel="noopener">Heartopia 最終使用者授權協議</a>重點摘要，並非逐字翻譯，也不取代官方原文：</p>
+<ul class="instructions"><li><strong>8.2：</strong>禁止事項涉及自動化存取、未授權第三方工具及其散布等行為。</li><li><strong>8.3：</strong>官方可依遊戲與服務資料判斷是否違規。</li><li><strong>8.4：</strong>警告後未改善可受處置；嚴重違規可能不事先警告，官方也保留對可疑行為暫停或終止帳號的權利。</li><li><strong>8.5：</strong>處置包括警告、限制登入或功能，以及暫停或終止帳號等。</li></ul>
+<p><strong>工具使用是否符合規章，請以你所使用遊戲版本適用的最新官方協議、公告與營運方判定為準。</strong>上述來源的更新日期為 2026年1月1日，本頁核對日期為 2026年10月31日。</p>
+<h3>工具會使用哪些資料？</h3>
+<ul class="instructions"><li><strong>本工具不讀取或修改遊戲程序記憶體、遊戲存檔，也不存取遊戲帳號系統或取得登入憑證。</strong></li><li>會讀取遊戲視窗的位置與尺寸等資訊，並觀察相關鍵盤、滑鼠操作，用來連接視窗、取色及同步疊層；「功能檢查」也會查詢程序的執行權限。</li><li>校正功能使用玩家貼上的截圖；自動選色會暫時擷取遊戲畫面，以辨識色盤位置與顏色。<strong>校正及自動選色使用的截圖不會自動儲存或上傳。</strong></li><li>作品快照、操作設定及診斷紀錄保存在本機。診斷紀錄不包含截圖或一般打字內容，但可能包含檔名、視窗標題及操作狀態，由玩家自行決定是否匯出提供。</li></ul>
+<p>本工具不會自動上傳圖片、截圖、設定或診斷紀錄。點選官方協議連結時，會使用瀏覽器造訪官方網站。</p>
+</section>
+
+<div class="pagination"><button id="previous" type="button">← 上一步</button><span class="progress" id="progress" aria-live="polite"></span><button id="next" class="next" type="button">下一步 →</button></div>
+</main></div>
+<footer>可隨時從工具的「使用教學」重新開啟本頁。</footer>
+<script>
+(()=>{
+const pages=[...document.querySelectorAll('main>section')];
+const steps=pages.filter(page=>!page.dataset.supplement);
+const links=[...document.querySelectorAll('nav a')];
+const previous=document.getElementById('previous'),next=document.getElementById('next');
+let current=0,active=steps[0];
+function show(){
+ const aliases={'#step-6':'#image-conversion','#step-7':'#troubleshooting'};
+ const hash=aliases[location.hash]||location.hash;
+ if(aliases[location.hash]) history.replaceState(null,'',hash);
+ active=pages.find(page=>'#'+page.id===hash)||steps[0];
+ current=steps.indexOf(active);
+ pages.forEach(page=>page.hidden=page!==active);
+ links.forEach(link=>{if(link.hash==='#'+active.id) link.setAttribute('aria-current',current<0?'page':'step');else link.removeAttribute('aria-current')});
+ previous.disabled=current===0;
+ previous.textContent=current<0?(active.id==='image-conversion'?'← 返回載入圖片':'← 返回取色與繪畫'):'← 上一步';
+ next.hidden=current<0;
+ next.disabled=current===steps.length-1;
+ next.textContent=current===steps.length-1?'主要步驟完成':'下一步 →';
+ document.getElementById('progress').textContent=current<0?'補充說明':(current+1)+' / '+steps.length;
+ window.scrollTo(0,0);
+}
+previous.addEventListener('click',()=>location.hash=current<0?(active.id==='image-conversion'?'step-1':'step-5'):steps[Math.max(0,current-1)].id);
+next.addEventListener('click',()=>{if(current>=0) location.hash=steps[Math.min(steps.length-1,current+1)].id});
+window.addEventListener('hashchange',show);show();
+})();
+</script>
+</body></html>

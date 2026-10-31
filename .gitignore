@@ -1,0 +1,19 @@
+__pycache__/
+*.pyc
+.pytest_cache/
+venv/
+config/
+build/
+dist/
+logs/
+local-archive/
+# Local image inputs and diagnostic exports.
+/*.png
+/*.jpg
+/*.jpeg
+/*.webp
+/*.zip
+/*.sha256
+.env
+.env.*
+!.env.example

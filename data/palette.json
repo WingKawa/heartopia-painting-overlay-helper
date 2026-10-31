@@ -1,0 +1,1752 @@
+[
+ {
+  "index": 0,
+  "label": "1-1",
+  "group": 1,
+  "slot": 1,
+  "row": 1,
+  "col": "L",
+  "rgb": [
+   5,
+   22,
+   22
+  ],
+  "hex": "#051616"
+ },
+ {
+  "index": 1,
+  "label": "1-2",
+  "group": 1,
+  "slot": 2,
+  "row": 1,
+  "col": "R",
+  "rgb": [
+   65,
+   69,
+   69
+  ],
+  "hex": "#414545"
+ },
+ {
+  "index": 2,
+  "label": "1-3",
+  "group": 1,
+  "slot": 3,
+  "row": 2,
+  "col": "L",
+  "rgb": [
+   128,
+   130,
+   130
+  ],
+  "hex": "#808282"
+ },
+ {
+  "index": 3,
+  "label": "1-4",
+  "group": 1,
+  "slot": 4,
+  "row": 2,
+  "col": "R",
+  "rgb": [
+   190,
+   191,
+   191
+  ],
+  "hex": "#BEBFBF"
+ },
+ {
+  "index": 4,
+  "label": "1-5",
+  "group": 1,
+  "slot": 5,
+  "row": 3,
+  "col": "L",
+  "rgb": [
+   254,
+   255,
+   255
+  ],
+  "hex": "#FEFFFF"
+ },
+ {
+  "index": 5,
+  "label": "2-1",
+  "group": 2,
+  "slot": 1,
+  "row": 1,
+  "col": "L",
+  "rgb": [
+   207,
+   53,
+   77
+  ],
+  "hex": "#CF354D"
+ },
+ {
+  "index": 6,
+  "label": "2-2",
+  "group": 2,
+  "slot": 2,
+  "row": 1,
+  "col": "R",
+  "rgb": [
+   238,
+   111,
+   114
+  ],
+  "hex": "#EE6F72"
+ },
+ {
+  "index": 7,
+  "label": "2-3",
+  "group": 2,
+  "slot": 3,
+  "row": 2,
+  "col": "L",
+  "rgb": [
+   166,
+   38,
+   61
+  ],
+  "hex": "#A6263D"
+ },
+ {
+  "index": 8,
+  "label": "2-4",
+  "group": 2,
+  "slot": 4,
+  "row": 2,
+  "col": "R",
+  "rgb": [
+   245,
+   172,
+   166
+  ],
+  "hex": "#F5ACA6"
+ },
+ {
+  "index": 9,
+  "label": "2-5",
+  "group": 2,
+  "slot": 5,
+  "row": 3,
+  "col": "L",
+  "rgb": [
+   201,
+   132,
+   131
+  ],
+  "hex": "#C98483"
+ },
+ {
+  "index": 10,
+  "label": "2-6",
+  "group": 2,
+  "slot": 6,
+  "row": 3,
+  "col": "R",
+  "rgb": [
+   163,
+   93,
+   94
+  ],
+  "hex": "#A35D5E"
+ },
+ {
+  "index": 11,
+  "label": "2-7",
+  "group": 2,
+  "slot": 7,
+  "row": 4,
+  "col": "L",
+  "rgb": [
+   105,
+   49,
+   59
+  ],
+  "hex": "#69313B"
+ },
+ {
+  "index": 12,
+  "label": "2-8",
+  "group": 2,
+  "slot": 8,
+  "row": 4,
+  "col": "R",
+  "rgb": [
+   231,
+   213,
+   213
+  ],
+  "hex": "#E7D5D5"
+ },
+ {
+  "index": 13,
+  "label": "2-9",
+  "group": 2,
+  "slot": 9,
+  "row": 5,
+  "col": "L",
+  "rgb": [
+   192,
+   172,
+   171
+  ],
+  "hex": "#C0ACAB"
+ },
+ {
+  "index": 14,
+  "label": "2-10",
+  "group": 2,
+  "slot": 10,
+  "row": 5,
+  "col": "R",
+  "rgb": [
+   117,
+   94,
+   94
+  ],
+  "hex": "#755E5E"
+ },
+ {
+  "index": 15,
+  "label": "3-1",
+  "group": 3,
+  "slot": 1,
+  "row": 1,
+  "col": "L",
+  "rgb": [
+   233,
+   94,
+   43
+  ],
+  "hex": "#E95E2B"
+ },
+ {
+  "index": 16,
+  "label": "3-2",
+  "group": 3,
+  "slot": 2,
+  "row": 1,
+  "col": "R",
+  "rgb": [
+   249,
+   131,
+   88
+  ],
+  "hex": "#F98358"
+ },
+ {
+  "index": 17,
+  "label": "3-3",
+  "group": 3,
+  "slot": 3,
+  "row": 2,
+  "col": "L",
+  "rgb": [
+   171,
+   66,
+   38
+  ],
+  "hex": "#AB4226"
+ },
+ {
+  "index": 18,
+  "label": "3-4",
+  "group": 3,
+  "slot": 4,
+  "row": 2,
+  "col": "R",
+  "rgb": [
+   254,
+   186,
+   159
+  ],
+  "hex": "#FEBA9F"
+ },
+ {
+  "index": 19,
+  "label": "3-5",
+  "group": 3,
+  "slot": 5,
+  "row": 3,
+  "col": "L",
+  "rgb": [
+   217,
+   147,
+   124
+  ],
+  "hex": "#D9937C"
+ },
+ {
+  "index": 20,
+  "label": "3-6",
+  "group": 3,
+  "slot": 6,
+  "row": 3,
+  "col": "R",
+  "rgb": [
+   175,
+   108,
+   88
+  ],
+  "hex": "#AF6C58"
+ },
+ {
+  "index": 21,
+  "label": "3-7",
+  "group": 3,
+  "slot": 7,
+  "row": 4,
+  "col": "L",
+  "rgb": [
+   117,
+   59,
+   49
+  ],
+  "hex": "#753B31"
+ },
+ {
+  "index": 22,
+  "label": "3-8",
+  "group": 3,
+  "slot": 8,
+  "row": 4,
+  "col": "R",
+  "rgb": [
+   233,
+   213,
+   208
+  ],
+  "hex": "#E9D5D0"
+ },
+ {
+  "index": 23,
+  "label": "3-9",
+  "group": 3,
+  "slot": 9,
+  "row": 5,
+  "col": "L",
+  "rgb": [
+   193,
+   172,
+   166
+  ],
+  "hex": "#C1ACA6"
+ },
+ {
+  "index": 24,
+  "label": "3-10",
+  "group": 3,
+  "slot": 10,
+  "row": 5,
+  "col": "R",
+  "rgb": [
+   117,
+   94,
+   89
+  ],
+  "hex": "#755E59"
+ },
+ {
+  "index": 25,
+  "label": "4-1",
+  "group": 4,
+  "slot": 1,
+  "row": 1,
+  "col": "L",
+  "rgb": [
+   244,
+   158,
+   22
+  ],
+  "hex": "#F49E16"
+ },
+ {
+  "index": 26,
+  "label": "4-2",
+  "group": 4,
+  "slot": 2,
+  "row": 1,
+  "col": "R",
+  "rgb": [
+   254,
+   174,
+   59
+  ],
+  "hex": "#FEAE3B"
+ },
+ {
+  "index": 27,
+  "label": "4-3",
+  "group": 4,
+  "slot": 3,
+  "row": 2,
+  "col": "L",
+  "rgb": [
+   177,
+   111,
+   22
+  ],
+  "hex": "#B16F16"
+ },
+ {
+  "index": 28,
+  "label": "4-4",
+  "group": 4,
+  "slot": 4,
+  "row": 2,
+  "col": "R",
+  "rgb": [
+   254,
+   206,
+   146
+  ],
+  "hex": "#FECE92"
+ },
+ {
+  "index": 29,
+  "label": "4-5",
+  "group": 4,
+  "slot": 5,
+  "row": 3,
+  "col": "L",
+  "rgb": [
+   218,
+   167,
+   109
+  ],
+  "hex": "#DAA76D"
+ },
+ {
+  "index": 30,
+  "label": "4-6",
+  "group": 4,
+  "slot": 6,
+  "row": 3,
+  "col": "R",
+  "rgb": [
+   179,
+   129,
+   75
+  ],
+  "hex": "#B3814B"
+ },
+ {
+  "index": 31,
+  "label": "4-7",
+  "group": 4,
+  "slot": 7,
+  "row": 4,
+  "col": "L",
+  "rgb": [
+   121,
+   81,
+   38
+  ],
+  "hex": "#795126"
+ },
+ {
+  "index": 32,
+  "label": "4-8",
+  "group": 4,
+  "slot": 8,
+  "row": 4,
+  "col": "R",
+  "rgb": [
+   245,
+   228,
+   206
+  ],
+  "hex": "#F5E4CE"
+ },
+ {
+  "index": 33,
+  "label": "4-9",
+  "group": 4,
+  "slot": 9,
+  "row": 5,
+  "col": "L",
+  "rgb": [
+   205,
+   188,
+   169
+  ],
+  "hex": "#CDBCA9"
+ },
+ {
+  "index": 34,
+  "label": "4-10",
+  "group": 4,
+  "slot": 10,
+  "row": 5,
+  "col": "R",
+  "rgb": [
+   128,
+   111,
+   94
+  ],
+  "hex": "#806F5E"
+ },
+ {
+  "index": 35,
+  "label": "5-1",
+  "group": 5,
+  "slot": 1,
+  "row": 1,
+  "col": "L",
+  "rgb": [
+   237,
+   202,
+   22
+  ],
+  "hex": "#EDCA16"
+ },
+ {
+  "index": 36,
+  "label": "5-2",
+  "group": 5,
+  "slot": 2,
+  "row": 1,
+  "col": "R",
+  "rgb": [
+   249,
+   216,
+   56
+  ],
+  "hex": "#F9D838"
+ },
+ {
+  "index": 37,
+  "label": "5-3",
+  "group": 5,
+  "slot": 3,
+  "row": 2,
+  "col": "L",
+  "rgb": [
+   179,
+   148,
+   22
+  ],
+  "hex": "#B39416"
+ },
+ {
+  "index": 38,
+  "label": "5-4",
+  "group": 5,
+  "slot": 4,
+  "row": 2,
+  "col": "R",
+  "rgb": [
+   250,
+   231,
+   145
+  ],
+  "hex": "#FAE791"
+ },
+ {
+  "index": 39,
+  "label": "5-5",
+  "group": 5,
+  "slot": 5,
+  "row": 3,
+  "col": "L",
+  "rgb": [
+   211,
+   190,
+   111
+  ],
+  "hex": "#D3BE6F"
+ },
+ {
+  "index": 40,
+  "label": "5-6",
+  "group": 5,
+  "slot": 6,
+  "row": 3,
+  "col": "R",
+  "rgb": [
+   171,
+   149,
+   75
+  ],
+  "hex": "#AB954B"
+ },
+ {
+  "index": 41,
+  "label": "5-7",
+  "group": 5,
+  "slot": 7,
+  "row": 4,
+  "col": "L",
+  "rgb": [
+   117,
+   99,
+   38
+  ],
+  "hex": "#756326"
+ },
+ {
+  "index": 42,
+  "label": "5-8",
+  "group": 5,
+  "slot": 8,
+  "row": 4,
+  "col": "R",
+  "rgb": [
+   238,
+   231,
+   199
+  ],
+  "hex": "#EEE7C7"
+ },
+ {
+  "index": 43,
+  "label": "5-9",
+  "group": 5,
+  "slot": 9,
+  "row": 5,
+  "col": "L",
+  "rgb": [
+   198,
+   191,
+   162
+  ],
+  "hex": "#C6BFA2"
+ },
+ {
+  "index": 44,
+  "label": "5-10",
+  "group": 5,
+  "slot": 10,
+  "row": 5,
+  "col": "R",
+  "rgb": [
+   120,
+   114,
+   89
+  ],
+  "hex": "#787259"
+ },
+ {
+  "index": 45,
+  "label": "6-1",
+  "group": 6,
+  "slot": 1,
+  "row": 1,
+  "col": "L",
+  "rgb": [
+   168,
+   188,
+   22
+  ],
+  "hex": "#A8BC16"
+ },
+ {
+  "index": 46,
+  "label": "6-2",
+  "group": 6,
+  "slot": 2,
+  "row": 1,
+  "col": "R",
+  "rgb": [
+   182,
+   201,
+   49
+  ],
+  "hex": "#B6C931"
+ },
+ {
+  "index": 47,
+  "label": "6-3",
+  "group": 6,
+  "slot": 3,
+  "row": 2,
+  "col": "L",
+  "rgb": [
+   117,
+   134,
+   22
+  ],
+  "hex": "#758616"
+ },
+ {
+  "index": 48,
+  "label": "6-4",
+  "group": 6,
+  "slot": 4,
+  "row": 2,
+  "col": "R",
+  "rgb": [
+   216,
+   223,
+   147
+  ],
+  "hex": "#D8DF93"
+ },
+ {
+  "index": 49,
+  "label": "6-5",
+  "group": 6,
+  "slot": 5,
+  "row": 3,
+  "col": "L",
+  "rgb": [
+   173,
+   183,
+   109
+  ],
+  "hex": "#ADB76D"
+ },
+ {
+  "index": 50,
+  "label": "6-6",
+  "group": 6,
+  "slot": 6,
+  "row": 3,
+  "col": "R",
+  "rgb": [
+   133,
+   145,
+   75
+  ],
+  "hex": "#85914B"
+ },
+ {
+  "index": 51,
+  "label": "6-7",
+  "group": 6,
+  "slot": 7,
+  "row": 4,
+  "col": "L",
+  "rgb": [
+   83,
+   94,
+   43
+  ],
+  "hex": "#535E2B"
+ },
+ {
+  "index": 52,
+  "label": "6-8",
+  "group": 6,
+  "slot": 8,
+  "row": 4,
+  "col": "R",
+  "rgb": [
+   230,
+   233,
+   199
+  ],
+  "hex": "#E6E9C7"
+ },
+ {
+  "index": 53,
+  "label": "6-9",
+  "group": 6,
+  "slot": 9,
+  "row": 5,
+  "col": "L",
+  "rgb": [
+   188,
+   194,
+   163
+  ],
+  "hex": "#BCC2A3"
+ },
+ {
+  "index": 54,
+  "label": "6-10",
+  "group": 6,
+  "slot": 10,
+  "row": 5,
+  "col": "R",
+  "rgb": [
+   110,
+   116,
+   93
+  ],
+  "hex": "#6E745D"
+ },
+ {
+  "index": 55,
+  "label": "7-1",
+  "group": 7,
+  "slot": 1,
+  "row": 1,
+  "col": "L",
+  "rgb": [
+   5,
+   162,
+   93
+  ],
+  "hex": "#05A25D"
+ },
+ {
+  "index": 56,
+  "label": "7-2",
+  "group": 7,
+  "slot": 2,
+  "row": 1,
+  "col": "R",
+  "rgb": [
+   65,
+   185,
+   123
+  ],
+  "hex": "#41B97B"
+ },
+ {
+  "index": 57,
+  "label": "7-3",
+  "group": 7,
+  "slot": 3,
+  "row": 2,
+  "col": "L",
+  "rgb": [
+   5,
+   116,
+   71
+  ],
+  "hex": "#057447"
+ },
+ {
+  "index": 58,
+  "label": "7-4",
+  "group": 7,
+  "slot": 4,
+  "row": 2,
+  "col": "R",
+  "rgb": [
+   156,
+   218,
+   173
+  ],
+  "hex": "#9CDAAD"
+ },
+ {
+  "index": 59,
+  "label": "7-5",
+  "group": 7,
+  "slot": 5,
+  "row": 3,
+  "col": "L",
+  "rgb": [
+   118,
+   178,
+   139
+  ],
+  "hex": "#76B28B"
+ },
+ {
+  "index": 60,
+  "label": "7-6",
+  "group": 7,
+  "slot": 6,
+  "row": 3,
+  "col": "R",
+  "rgb": [
+   79,
+   137,
+   105
+  ],
+  "hex": "#4F8969"
+ },
+ {
+  "index": 61,
+  "label": "7-7",
+  "group": 7,
+  "slot": 7,
+  "row": 4,
+  "col": "L",
+  "rgb": [
+   36,
+   86,
+   64
+  ],
+  "hex": "#245640"
+ },
+ {
+  "index": 62,
+  "label": "7-8",
+  "group": 7,
+  "slot": 8,
+  "row": 4,
+  "col": "R",
+  "rgb": [
+   195,
+   224,
+   204
+  ],
+  "hex": "#C3E0CC"
+ },
+ {
+  "index": 63,
+  "label": "7-9",
+  "group": 7,
+  "slot": 9,
+  "row": 5,
+  "col": "L",
+  "rgb": [
+   157,
+   183,
+   166
+  ],
+  "hex": "#9DB7A6"
+ },
+ {
+  "index": 64,
+  "label": "7-10",
+  "group": 7,
+  "slot": 10,
+  "row": 5,
+  "col": "R",
+  "rgb": [
+   83,
+   105,
+   93
+  ],
+  "hex": "#53695D"
+ },
+ {
+  "index": 65,
+  "label": "8-1",
+  "group": 8,
+  "slot": 1,
+  "row": 1,
+  "col": "L",
+  "rgb": [
+   5,
+   135,
+   129
+  ],
+  "hex": "#058781"
+ },
+ {
+  "index": 66,
+  "label": "8-2",
+  "group": 8,
+  "slot": 2,
+  "row": 1,
+  "col": "R",
+  "rgb": [
+   5,
+   171,
+   160
+  ],
+  "hex": "#05ABA0"
+ },
+ {
+  "index": 67,
+  "label": "8-3",
+  "group": 8,
+  "slot": 3,
+  "row": 2,
+  "col": "L",
+  "rgb": [
+   5,
+   105,
+   102
+  ],
+  "hex": "#056966"
+ },
+ {
+  "index": 68,
+  "label": "8-4",
+  "group": 8,
+  "slot": 4,
+  "row": 2,
+  "col": "R",
+  "rgb": [
+   126,
+   205,
+   194
+  ],
+  "hex": "#7ECDC2"
+ },
+ {
+  "index": 69,
+  "label": "8-5",
+  "group": 8,
+  "slot": 5,
+  "row": 3,
+  "col": "L",
+  "rgb": [
+   85,
+   164,
+   156
+  ],
+  "hex": "#55A49C"
+ },
+ {
+  "index": 70,
+  "label": "8-6",
+  "group": 8,
+  "slot": 6,
+  "row": 3,
+  "col": "R",
+  "rgb": [
+   43,
+   126,
+   120
+  ],
+  "hex": "#2B7E78"
+ },
+ {
+  "index": 71,
+  "label": "8-7",
+  "group": 8,
+  "slot": 7,
+  "row": 4,
+  "col": "L",
+  "rgb": [
+   5,
+   75,
+   75
+  ],
+  "hex": "#054B4B"
+ },
+ {
+  "index": 72,
+  "label": "8-8",
+  "group": 8,
+  "slot": 8,
+  "row": 4,
+  "col": "R",
+  "rgb": [
+   190,
+   224,
+   218
+  ],
+  "hex": "#BEE0DA"
+ },
+ {
+  "index": 73,
+  "label": "8-9",
+  "group": 8,
+  "slot": 9,
+  "row": 5,
+  "col": "L",
+  "rgb": [
+   152,
+   183,
+   178
+  ],
+  "hex": "#98B7B2"
+ },
+ {
+  "index": 74,
+  "label": "8-10",
+  "group": 8,
+  "slot": 10,
+  "row": 5,
+  "col": "R",
+  "rgb": [
+   78,
+   107,
+   102
+  ],
+  "hex": "#4E6B66"
+ },
+ {
+  "index": 75,
+  "label": "9-1",
+  "group": 9,
+  "slot": 1,
+  "row": 1,
+  "col": "L",
+  "rgb": [
+   5,
+   114,
+   156
+  ],
+  "hex": "#05729C"
+ },
+ {
+  "index": 76,
+  "label": "9-2",
+  "group": 9,
+  "slot": 2,
+  "row": 1,
+  "col": "R",
+  "rgb": [
+   5,
+   153,
+   186
+  ],
+  "hex": "#0599BA"
+ },
+ {
+  "index": 77,
+  "label": "9-3",
+  "group": 9,
+  "slot": 3,
+  "row": 2,
+  "col": "L",
+  "rgb": [
+   5,
+   88,
+   120
+  ],
+  "hex": "#055878"
+ },
+ {
+  "index": 78,
+  "label": "9-4",
+  "group": 9,
+  "slot": 4,
+  "row": 2,
+  "col": "R",
+  "rgb": [
+   121,
+   187,
+   202
+  ],
+  "hex": "#79BBCA"
+ },
+ {
+  "index": 79,
+  "label": "9-5",
+  "group": 9,
+  "slot": 5,
+  "row": 3,
+  "col": "L",
+  "rgb": [
+   81,
+   147,
+   165
+  ],
+  "hex": "#5193A5"
+ },
+ {
+  "index": 80,
+  "label": "9-6",
+  "group": 9,
+  "slot": 6,
+  "row": 3,
+  "col": "R",
+  "rgb": [
+   36,
+   109,
+   127
+  ],
+  "hex": "#246D7F"
+ },
+ {
+  "index": 81,
+  "label": "9-7",
+  "group": 9,
+  "slot": 7,
+  "row": 4,
+  "col": "L",
+  "rgb": [
+   5,
+   73,
+   91
+  ],
+  "hex": "#05495B"
+ },
+ {
+  "index": 82,
+  "label": "9-8",
+  "group": 9,
+  "slot": 8,
+  "row": 4,
+  "col": "R",
+  "rgb": [
+   198,
+   221,
+   226
+  ],
+  "hex": "#C6DDE2"
+ },
+ {
+  "index": 83,
+  "label": "9-9",
+  "group": 9,
+  "slot": 9,
+  "row": 5,
+  "col": "L",
+  "rgb": [
+   158,
+   181,
+   186
+  ],
+  "hex": "#9EB5BA"
+ },
+ {
+  "index": 84,
+  "label": "9-10",
+  "group": 9,
+  "slot": 10,
+  "row": 5,
+  "col": "R",
+  "rgb": [
+   79,
+   103,
+   111
+  ],
+  "hex": "#4F676F"
+ },
+ {
+  "index": 85,
+  "label": "10-1",
+  "group": 10,
+  "slot": 1,
+  "row": 1,
+  "col": "L",
+  "rgb": [
+   5,
+   94,
+   166
+  ],
+  "hex": "#055EA6"
+ },
+ {
+  "index": 86,
+  "label": "10-2",
+  "group": 10,
+  "slot": 2,
+  "row": 1,
+  "col": "R",
+  "rgb": [
+   43,
+   131,
+   193
+  ],
+  "hex": "#2B83C1"
+ },
+ {
+  "index": 87,
+  "label": "10-3",
+  "group": 10,
+  "slot": 3,
+  "row": 2,
+  "col": "L",
+  "rgb": [
+   5,
+   71,
+   130
+  ],
+  "hex": "#054782"
+ },
+ {
+  "index": 88,
+  "label": "10-4",
+  "group": 10,
+  "slot": 4,
+  "row": 2,
+  "col": "R",
+  "rgb": [
+   131,
+   168,
+   201
+  ],
+  "hex": "#83A8C9"
+ },
+ {
+  "index": 89,
+  "label": "10-5",
+  "group": 10,
+  "slot": 5,
+  "row": 3,
+  "col": "L",
+  "rgb": [
+   93,
+   128,
+   161
+  ],
+  "hex": "#5D80A1"
+ },
+ {
+  "index": 90,
+  "label": "10-6",
+  "group": 10,
+  "slot": 6,
+  "row": 3,
+  "col": "R",
+  "rgb": [
+   54,
+   91,
+   127
+  ],
+  "hex": "#365B7F"
+ },
+ {
+  "index": 91,
+  "label": "10-7",
+  "group": 10,
+  "slot": 7,
+  "row": 4,
+  "col": "L",
+  "rgb": [
+   25,
+   59,
+   86
+  ],
+  "hex": "#193B56"
+ },
+ {
+  "index": 92,
+  "label": "10-8",
+  "group": 10,
+  "slot": 8,
+  "row": 4,
+  "col": "R",
+  "rgb": [
+   193,
+   205,
+   213
+  ],
+  "hex": "#C1CDD5"
+ },
+ {
+  "index": 93,
+  "label": "10-9",
+  "group": 10,
+  "slot": 9,
+  "row": 5,
+  "col": "L",
+  "rgb": [
+   155,
+   166,
+   176
+  ],
+  "hex": "#9BA6B0"
+ },
+ {
+  "index": 94,
+  "label": "10-10",
+  "group": 10,
+  "slot": 10,
+  "row": 5,
+  "col": "R",
+  "rgb": [
+   76,
+   89,
+   103
+  ],
+  "hex": "#4C5967"
+ },
+ {
+  "index": 95,
+  "label": "11-1",
+  "group": 11,
+  "slot": 1,
+  "row": 1,
+  "col": "L",
+  "rgb": [
+   83,
+   77,
+   161
+  ],
+  "hex": "#534DA1"
+ },
+ {
+  "index": 96,
+  "label": "11-2",
+  "group": 11,
+  "slot": 2,
+  "row": 1,
+  "col": "R",
+  "rgb": [
+   117,
+   119,
+   189
+  ],
+  "hex": "#7577BD"
+ },
+ {
+  "index": 97,
+  "label": "11-3",
+  "group": 11,
+  "slot": 3,
+  "row": 2,
+  "col": "L",
+  "rgb": [
+   62,
+   56,
+   126
+  ],
+  "hex": "#3E387E"
+ },
+ {
+  "index": 98,
+  "label": "11-4",
+  "group": 11,
+  "slot": 4,
+  "row": 2,
+  "col": "R",
+  "rgb": [
+   162,
+   160,
+   199
+  ],
+  "hex": "#A2A0C7"
+ },
+ {
+  "index": 99,
+  "label": "11-5",
+  "group": 11,
+  "slot": 5,
+  "row": 3,
+  "col": "L",
+  "rgb": [
+   120,
+   122,
+   161
+  ],
+  "hex": "#787AA1"
+ },
+ {
+  "index": 100,
+  "label": "11-6",
+  "group": 11,
+  "slot": 6,
+  "row": 3,
+  "col": "R",
+  "rgb": [
+   85,
+   86,
+   126
+  ],
+  "hex": "#55567E"
+ },
+ {
+  "index": 101,
+  "label": "11-7",
+  "group": 11,
+  "slot": 7,
+  "row": 4,
+  "col": "L",
+  "rgb": [
+   51,
+   53,
+   85
+  ],
+  "hex": "#333555"
+ },
+ {
+  "index": 102,
+  "label": "11-8",
+  "group": 11,
+  "slot": 8,
+  "row": 4,
+  "col": "R",
+  "rgb": [
+   201,
+   202,
+   213
+  ],
+  "hex": "#C9CAD5"
+ },
+ {
+  "index": 103,
+  "label": "11-9",
+  "group": 11,
+  "slot": 9,
+  "row": 5,
+  "col": "L",
+  "rgb": [
+   162,
+   163,
+   176
+  ],
+  "hex": "#A2A3B0"
+ },
+ {
+  "index": 104,
+  "label": "11-10",
+  "group": 11,
+  "slot": 10,
+  "row": 5,
+  "col": "R",
+  "rgb": [
+   86,
+   88,
+   105
+  ],
+  "hex": "#565869"
+ },
+ {
+  "index": 105,
+  "label": "12-1",
+  "group": 12,
+  "slot": 1,
+  "row": 1,
+  "col": "L",
+  "rgb": [
+   129,
+   61,
+   139
+  ],
+  "hex": "#813D8B"
+ },
+ {
+  "index": 106,
+  "label": "12-2",
+  "group": 12,
+  "slot": 2,
+  "row": 1,
+  "col": "R",
+  "rgb": [
+   161,
+   103,
+   169
+  ],
+  "hex": "#A167A9"
+ },
+ {
+  "index": 107,
+  "label": "12-3",
+  "group": 12,
+  "slot": 3,
+  "row": 2,
+  "col": "L",
+  "rgb": [
+   96,
+   43,
+   108
+  ],
+  "hex": "#602B6C"
+ },
+ {
+  "index": 108,
+  "label": "12-4",
+  "group": 12,
+  "slot": 4,
+  "row": 2,
+  "col": "R",
+  "rgb": [
+   184,
+   155,
+   185
+  ],
+  "hex": "#B89BB9"
+ },
+ {
+  "index": 109,
+  "label": "12-5",
+  "group": 12,
+  "slot": 5,
+  "row": 3,
+  "col": "L",
+  "rgb": [
+   144,
+   115,
+   149
+  ],
+  "hex": "#907395"
+ },
+ {
+  "index": 110,
+  "label": "12-6",
+  "group": 12,
+  "slot": 6,
+  "row": 3,
+  "col": "R",
+  "rgb": [
+   108,
+   77,
+   115
+  ],
+  "hex": "#6C4D73"
+ },
+ {
+  "index": 111,
+  "label": "12-7",
+  "group": 12,
+  "slot": 7,
+  "row": 4,
+  "col": "L",
+  "rgb": [
+   67,
+   46,
+   75
+  ],
+  "hex": "#432E4B"
+ },
+ {
+  "index": 112,
+  "label": "12-8",
+  "group": 12,
+  "slot": 8,
+  "row": 4,
+  "col": "R",
+  "rgb": [
+   207,
+   201,
+   209
+  ],
+  "hex": "#CFC9D1"
+ },
+ {
+  "index": 113,
+  "label": "12-9",
+  "group": 12,
+  "slot": 9,
+  "row": 5,
+  "col": "L",
+  "rgb": [
+   171,
+   161,
+   172
+  ],
+  "hex": "#ABA1AC"
+ },
+ {
+  "index": 114,
+  "label": "12-10",
+  "group": 12,
+  "slot": 10,
+  "row": 5,
+  "col": "R",
+  "rgb": [
+   96,
+   86,
+   101
+  ],
+  "hex": "#605665"
+ },
+ {
+  "index": 115,
+  "label": "13-1",
+  "group": 13,
+  "slot": 1,
+  "row": 1,
+  "col": "L",
+  "rgb": [
+   173,
+   53,
+   111
+  ],
+  "hex": "#AD356F"
+ },
+ {
+  "index": 116,
+  "label": "13-2",
+  "group": 13,
+  "slot": 2,
+  "row": 1,
+  "col": "R",
+  "rgb": [
+   207,
+   107,
+   143
+  ],
+  "hex": "#CF6B8F"
+ },
+ {
+  "index": 117,
+  "label": "13-3",
+  "group": 13,
+  "slot": 3,
+  "row": 2,
+  "col": "L",
+  "rgb": [
+   134,
+   38,
+   88
+  ],
+  "hex": "#862658"
+ },
+ {
+  "index": 118,
+  "label": "13-4",
+  "group": 13,
+  "slot": 4,
+  "row": 2,
+  "col": "R",
+  "rgb": [
+   217,
+   161,
+   180
+  ],
+  "hex": "#D9A1B4"
+ },
+ {
+  "index": 119,
+  "label": "13-5",
+  "group": 13,
+  "slot": 5,
+  "row": 3,
+  "col": "L",
+  "rgb": [
+   180,
+   122,
+   140
+  ],
+  "hex": "#B47A8C"
+ },
+ {
+  "index": 120,
+  "label": "13-6",
+  "group": 13,
+  "slot": 6,
+  "row": 3,
+  "col": "R",
+  "rgb": [
+   139,
+   83,
+   103
+  ],
+  "hex": "#8B5367"
+ },
+ {
+  "index": 121,
+  "label": "13-7",
+  "group": 13,
+  "slot": 7,
+  "row": 4,
+  "col": "L",
+  "rgb": [
+   96,
+   53,
+   75
+  ],
+  "hex": "#60354B"
+ },
+ {
+  "index": 122,
+  "label": "13-8",
+  "group": 13,
+  "slot": 8,
+  "row": 4,
+  "col": "R",
+  "rgb": [
+   228,
+   213,
+   218
+  ],
+  "hex": "#E4D5DA"
+ },
+ {
+  "index": 123,
+  "label": "13-9",
+  "group": 13,
+  "slot": 9,
+  "row": 5,
+  "col": "L",
+  "rgb": [
+   188,
+   173,
+   177
+  ],
+  "hex": "#BCADB1"
+ },
+ {
+  "index": 124,
+  "label": "13-10",
+  "group": 13,
+  "slot": 10,
+  "row": 5,
+  "col": "R",
+  "rgb": [
+   114,
+   94,
+   102
+  ],
+  "hex": "#725E66"
+ }
+]
