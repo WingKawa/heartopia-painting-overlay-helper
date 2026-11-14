@@ -6,11 +6,16 @@ from tkinter import ttk
 SIZE_GROUPS = (
     ('16:9',((30,18),(50,28),(100,56),(150,84))),
     ('4:3',((30,24),(50,38),(100,76),(150,114))),
-    ('1:1',((30,30),(50,50),(100,100),(150,150))),
+    ('1:1',((30,30),(50,50),(100,100),(128,128),(150,150))),
     ('3:4',((24,30),(38,50),(76,100),(114,150))),
     ('9:16',((18,30),(28,50),(56,100),(84,150))),
 )
-PRESETS = {f'{ratio}　{w}×{h}':(w,h) for ratio,sizes in SIZE_GROUPS for w,h in sizes}
+PRESET_LABELS = {(128, 128): '1:1 128x128 (煙火)'}
+PRESETS = {
+    PRESET_LABELS.get((w, h), f'{ratio}　{w}×{h}'): (w, h)
+    for ratio, sizes in SIZE_GROUPS
+    for w, h in sizes
+}
 
 
 class SizePresets(ttk.Frame):
@@ -19,8 +24,9 @@ class SizePresets(ttk.Frame):
         self.width,self.height = width,height
         self.choice = tk.StringVar(master=self,value='自訂尺寸')
         ttk.Label(self,text='常用尺寸').pack(side='left')
+        choices = ('自訂尺寸',*PRESETS)
         self.menu = ttk.Combobox(self,textvariable=self.choice,state='readonly',
-                                values=('自訂尺寸',*PRESETS),width=23,height=21)
+                                values=choices,width=23,height=len(choices))
         self.menu.pack(side='left',padx=6)
         self.menu.bind('<<ComboboxSelected>>',self.select)
         self.traces = [(variable,variable.trace_add('write',self.refresh)) for variable in (width,height)]
